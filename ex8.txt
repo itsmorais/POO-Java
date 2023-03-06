@@ -1,0 +1,8 @@
+  String numero = JOptionPane.showInputDialog("Entre com um número:");
+       int valor = Integer.parseInt(numero);
+       
+       if(valor % 2 == 0){
+           System.out.println("O valor inserido é Par");}
+       else{
+           System.out.println("O valor inserido é impar");
+       }
