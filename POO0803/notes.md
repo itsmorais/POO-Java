@@ -1,6 +1,6 @@
 # Orientação a objetos:
 
-### CLasse:
+### Classe:
 é um modelo de objeto. Consiste de descrições de estado e métodos.
 
 - Atributo: 
