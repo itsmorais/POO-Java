@@ -33,4 +33,31 @@ e sofrem alteração ao longo da execução do programa(variáveis)
 
 ![image](https://user-images.githubusercontent.com/53665466/223694637-d829d134-0228-4365-ab01-4908e055bfbb.png)
 
+## Encapsulamento
+
+### Getters
+- Objetivo: 
+Permitir que o atributo encapsulado seja lido por outra classe;
+- Nomenclatura:
+Utiliza-se o prefixo get seguido do nome da variável;
+- Acesso:
+Não privado(mais utilizado como public)
+- Tipo de retorno:
+O mesmo tipo do atributo encapsulado;
+- Parâmetro:
+nenhum()
+
+### Setters
+- Objetivo:
+Permitir que o atributo encapsulado possa ter seu valor modificado por outra classe;
+- Nomenclatura:
+Utiliza-se o prefixo set seguido do nome da variável;
+- Acesso:
+Não-privado(mais utilizado como public)
+- Tipo de retorno:
+Não retorna valor -void;
+- Parâmetro:
+Apenas um, de mesmo tipo e mesmo nome do atributo encapsulado.
+![image](https://user-images.githubusercontent.com/53665466/223703558-98c7d91e-84fc-4c86-a201-9ba588b7e031.png)
+
 
