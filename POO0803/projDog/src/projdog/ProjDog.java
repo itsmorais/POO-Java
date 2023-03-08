@@ -5,13 +5,13 @@ public class ProjDog {
 
     public static void main(String[] args) {
         Dog primeiro = new Dog();
-        primeiro.nome = "Nina";
-        primeiro.peso = 1;
+        primeiro.setNome("Nina");
+        primeiro.setPeso(1);
         
         
         Dog segundo = new Dog();
-        segundo.nome = "Bravo";
-        segundo.peso = 10;
+        segundo.setNome("Bravo");
+        segundo.setPeso(10);
         
         
         primeiro.latir();
