@@ -1,1 +1,1 @@
-# POO-Java
+# JAVA OOP & Database(mysql) usage.
