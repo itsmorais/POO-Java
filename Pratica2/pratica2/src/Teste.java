@@ -8,15 +8,16 @@ public class Teste {
         aluno1.setRg("38779876");
         aluno1.setSexo('m');
 
-        aluno1.imprimir(aluno1);
-
         Data data1 = new Data();
         
         data1.setDia(22);
         data1.setMes(7);
         data1.setAno(1997);
-        // Imprimir data formada
-        System.out.println(data1.formatarData());
+        aluno1.setDataNasc(data1);
+
+
+        aluno1.imprimir(aluno1);
+
 
     }
 }

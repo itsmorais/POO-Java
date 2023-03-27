@@ -4,8 +4,15 @@ public class Aluno {
     private char sexo;
     private String rg;
     private String cpf;
+    private Data dataNasc = new Data();
 
 
+    public Data getDataNasc() {
+        return dataNasc;
+    }
+    public void setDataNasc(Data dataNasc) {
+        this.dataNasc = dataNasc;
+    }
     public Aluno(){
         System.out.println("Instanciando novo aluno");
     }
@@ -40,11 +47,14 @@ public class Aluno {
         this.cpf = cpf;
     }
 
+
+
     public void imprimir(Aluno aluno){
         System.out.println("Nome: "+aluno.getNome()+
         "\nCPF: "+aluno.getCpf()+
         "\nRA: "+aluno.getRa()+
-        "\nRG: "+aluno.getRg());
+        "\nRG: "+aluno.getRg()+
+        "\nData de nascimento: "+aluno.getDataNasc().formatarData());
         if(aluno.getSexo() == 'm'){
             System.out.println("Sexo: Masculino");
         }else{
