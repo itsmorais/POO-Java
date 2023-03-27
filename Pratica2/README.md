@@ -77,3 +77,6 @@ public int calcMedia(float v1, float v2){
 //Possuem a mesma quantidade e tipos de parâmetros:
 // 2 n°s reais
 
+# 2 e 3 Criar classes em JAVA com esses atributos e métodos + Classe Teste instanciando objetos e imprimindo-os na tela
+![image](https://user-images.githubusercontent.com/53665466/228054162-397bbe64-869d-481a-9875-553c2b1de305.png)
+
