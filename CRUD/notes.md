@@ -19,7 +19,7 @@ Responder mensagens recebidas através de seus métodos;
 Enviar mensagens a outros objetos.
 
 - Atributo
-propriedade de uma classe que definem as características
+Propriedade de uma classe que definem as características
 do objeto.
 o conjunto de atributos de um objeto é chamado de
 estado do objeto.
