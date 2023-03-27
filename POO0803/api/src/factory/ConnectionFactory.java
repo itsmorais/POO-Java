@@ -4,7 +4,7 @@ package factory;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import projdog.DatabaseConnection;
+import api.DatabaseConnection;
 
 
 public class ConnectionFactory {

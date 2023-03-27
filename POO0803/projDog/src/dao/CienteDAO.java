@@ -1,11 +1,9 @@
 package dao;
 
-
 import factory.ConnectionFactory;
 import modelo.Cliente;
 import java.sql.*;
 import java.sql.PreparedStatement;
-
 
 public class CienteDAO {
     private Connection connection;
@@ -29,6 +27,8 @@ public class CienteDAO {
             throw new RuntimeException(u);
         }
     }
+    
+    
     
     
 }

@@ -1,13 +1,11 @@
-
-package factory;
+package api;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import projdog.DatabaseConnection;
 
 
-public class ConnectionFactory {
+public class DatabaseConnection {
     public static String status = "Não conectou!";
 	
 	// Método de conexão
@@ -22,8 +20,8 @@ public class ConnectionFactory {
 		
 		// Configurando conexão com um banco de Dados//
 		
-		String serverName = "127.0.0.1";
-		String mydatabase = "api";
+		String serverName = "localhost";
+		String mydatabase = "mysql";
 		String url = "jdbc:mysql://"+serverName+"/"+mydatabase;
 		String username = "root";
 		String password = "Desenv1243$";
@@ -57,7 +55,7 @@ public class ConnectionFactory {
 	
 	public static boolean CloseConnection() {
 		try {
-			ConnectionFactory.getConexaoMySQL().close();
+			DatabaseConnection.getConexaoMySQL().close();
 			return true;
 				
 		}catch(SQLException e) {
@@ -69,9 +67,8 @@ public class ConnectionFactory {
 	// Método que reinicia sua conexão//
 		public static java.sql.Connection RestartConnection(){
 			CloseConnection();
-			return ConnectionFactory.getConexaoMySQL();
+			return DatabaseConnection.getConexaoMySQL();
 		
 		}
-
     
 }
