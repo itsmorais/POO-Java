@@ -1,4 +1,4 @@
-# 1 Defina e  dê  um  exemplo  para  cada  um  dos  conceitos de  Orientação  a  Objetoslistados  a seguir (Inserir Referências utilizadas)
+# 1 Defina e  dê  um  exemplo  para  cada  um  dos  conceitos de  Orientação  a  Objetos listados  a seguir (Inserir Referências utilizadas)
 
 a) Classes:
 é um modelo de objeto. Consiste de descrições de estado e métodos.
@@ -35,21 +35,23 @@ Uma caneta tem alguma ações possíveis como: destampar, tampar e escrever
 
 
 e) abstrações:
+Abstração é o processo de simplificar um conceito ou objeto complexo, identificando as características essenciais e ignorando as não essenciais.
 
+exemplo:
 
-
+A classe Livro pode ter vários atributos, como título, autor, editora, número de páginas, data de publicação, entre outros.
+No entanto, para simplificar o uso dessa classe e torná-la mais abstrata, podemos definir uma interface pública que exponha apenas os atributos essenciais, como título e autor. Dessa forma, os usuários do sistema podem interagir com os livros sem se preocupar com os outros atributos, que são detalhes internos da implementação da classe.
 
 
 f) encapsulamento:
-*ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.*
+Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
 
 ou seja, ocultar do usuário partes que não importam para a funcionalidade básica do software
 ex:
 Em um controle remoto não sabemos como ele funciona, qual a lógica de comandos etc. Eu enquanto usuário só preciso saber que ao apertar o botão vermelho escrito powerOff(desligar) a minha Tv desliga imediatamente.
 
 g) Herança:
-Permite basear uma nova classe na definição de uma outra classe previamente existente.
-A herança será aplicada tanto para as característica quanto para os comportamentos
+Permite que uma classe herde propriedades e comportamentos de outra classe. Isso evita a duplicação de código e permite que as classes sejam organizadas em uma hierarquia.
 exemplo:
 Podemos criar a superclasse Pessoa com os atributos e métodos que toda pessoa do meu sistema terá como: nome,idade. com os métodos getters e setters.
 Em seguida podemos criar subclasses como Professor,Aluno,Segurancas.
@@ -57,11 +59,7 @@ essas três classes herdarão os atributos de Pessoas e seus métodos. Assim dev
 
 
 h) Polimorfismo:
-*poli = muitas*
-
-*morfo = formas*
-
-Permite que um **mesmo nome** represente **vários comportamentos** diferentes
+Polimorfismo é a capacidade de um objeto ser usado de várias maneiras diferentes. Isso significa que o mesmo método pode ser usado em diferentes objetos, mesmo que esses objetos sejam de classes diferentes.
 exemplo:
 //Primeiro Método
 public float calcMedia(float n1, float n2){
@@ -77,6 +75,6 @@ public int calcMedia(float v1, float v2){
 //Possuem a mesma quantidade e tipos de parâmetros:
 // 2 n°s reais
 
-# 2 e 3 Criar classes em JAVA com esses atributos e métodos + Classe Teste instanciando objetos e imprimindo-os na tela
-![image](https://user-images.githubusercontent.com/53665466/228054162-397bbe64-869d-481a-9875-553c2b1de305.png)
+### Referência: Gamma, E., Helm, R., Johnson, R., Vlissides, J., & Costa, R. L. (2000). Padrões de Projeto: Soluções Reutilizáveis de Software Orientado a Objetos. Porto Alegre: Bookman.
+
 
