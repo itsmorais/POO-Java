@@ -1,23 +1,18 @@
 public class Teste {
-    public static void main(String[] args) throws Exception {
-        Aluno aluno1 = new Aluno();
-
-        aluno1.setRa(22142509);
-        aluno1.setNome("Michael Aparecido de Morais");
-        aluno1.setCpf("46607827762");
-        aluno1.setRg("38779876");
-        aluno1.setSexo('m');
-
-        Data data1 = new Data();
+    public static void main(String[] args) {
+        int ra = (22142509);
+        String nome = ("Michael Aparecido de Morais");
+        String cpf = ("46607827762");
+        String rg = ("38779876");
+        char sexo = ('m');
         
-        data1.setDia(22);
-        data1.setMes(7);
-        data1.setAno(1997);
-        aluno1.setDataNasc(data1);
-
+        int dia = 22;
+        int mes = 07;
+        int ano = 1997;
+        
+        Data data1 = new Data(dia,mes,ano);
+        Aluno aluno1 = new Aluno(ra,nome,sexo,rg,cpf,data1.formatarData());
 
         aluno1.imprimir(aluno1);
-
-
     }
 }

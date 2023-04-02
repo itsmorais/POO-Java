@@ -4,17 +4,22 @@ public class Aluno {
     private char sexo;
     private String rg;
     private String cpf;
-    private Data dataNasc = new Data();
+    private String dataNasc;
 
-
-    public Data getDataNasc() {
-        return dataNasc;
-    }
-    public void setDataNasc(Data dataNasc) {
+    public Aluno(int ra, String nome, char sexo, String rg, String cpf, String dataNasc) {
+        this.ra = ra;
+        this.nome = nome;
+        this.sexo = sexo;
+        this.rg = rg;
+        this.cpf = cpf;
         this.dataNasc = dataNasc;
     }
-    public Aluno(){
-        System.out.println("Instanciando novo aluno");
+
+    public String getDataNasc() {
+        return dataNasc;
+    }
+    public void setDataNasc(String dataNasc) {
+        this.dataNasc = dataNasc;
     }
     public int getRa() {
         return ra;
@@ -47,15 +52,13 @@ public class Aluno {
         this.cpf = cpf;
     }
 
-
-
     public void imprimir(Aluno aluno){
-        System.out.println("Nome: "+aluno.getNome()+
-        "\nCPF: "+aluno.getCpf()+
-        "\nRA: "+aluno.getRa()+
-        "\nRG: "+aluno.getRg()+
-        "\nData de nascimento: "+aluno.getDataNasc().formatarData());
-        if(aluno.getSexo() == 'm'){
+        System.out.println("Nome: "+this.nome+
+        "\nCPF: "+this.cpf+
+        "\nRA: "+this.ra+
+        "\nRG: "+this.rg+
+        "\nData de nascimento: "+this.dataNasc);
+        if(this.sexo == 'm'){
             System.out.println("Sexo: Masculino");
         }else{
             System.out.println("Sexo: Feminino");
